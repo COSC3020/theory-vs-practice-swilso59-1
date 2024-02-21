@@ -3,6 +3,13 @@
 
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
+  - constant factors and hidden constants typically in asymtotic analysis constant factors are ignored.
+    In real life situation these factors can have a decent impact on the actual time comlexity.
+  - The input data given in the real world can be much different then what it would be assumed to be for the asymtotic analysis.
+    an algorrithm that performs well for the average and worst case senario might might not have good performance for a
+    specific input that was not considered.
+  - Hardware may have different instruction sets algorithms that perform well on one machine may not perform the same on another type of machine.
+    Asymtoic analysis does not take this into consideration and can lead to misleading expectations of performance.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
