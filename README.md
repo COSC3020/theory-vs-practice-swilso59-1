@@ -15,6 +15,7 @@
   elements takes 5 seconds. Given what you know about the asymptotic complexity
   of search in a binary search tree, how long would you guess finding the same
   element in a search tree with 10,000 elements takes? Explain your reasoning.
+  - Given that the BST is balanced we can assume that the average case time complexity is $\ O(\log_2 n) $
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
