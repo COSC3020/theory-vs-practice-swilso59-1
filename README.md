@@ -19,7 +19,7 @@
   - $\(\log_2 n)$ is how we can determine the hieght of the tree with n being the amount of elements in the tree.
   - we also know that with the hieght of the tree we can determine the maximum amount of comparisons that would be made to find a
     particular element in the tree.
-  - $\\log_2 1000 = 9.965$ which we can just round to 10 given the tree is balanced. So know we know the height of the tree is ten
+  - $\\log_2 1000 = 9.965$ which we can just round to 10 given the tree is balanced. So know we know the height of the tree is 10
     and the max number of comparisons made is 11 or $\\log_2 (n) + 1$
   - So now we know a tree that has 1000 elements has a height of ten and a max number of comparisons of 11. We also know this takes 5 
     seconds so find a specific element.
