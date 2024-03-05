@@ -31,5 +31,12 @@
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
+  - Having an imbalnced tree could effect the time. This would cause the time complexity to be worse then the $\ O(\log_2 n)$ 
+    complexity we used for a balanced tree.
+  - The distrubution of the data within the tree could be different. Which would effect the performance of the binary search algorithm.
+  - The difference of these 2 cases could be explained by a possiblity of the searches being run on different machines.
+ 
+I recieved help from the TA.
+I also reviewed  theory-vs-practice-Boomboomyoyo , theory-vs-practice-wyo-kaitlyn , and theory-vs-practice-Countmooshroom
 
 Add your answers to this markdown file.
