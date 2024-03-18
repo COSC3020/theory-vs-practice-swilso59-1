@@ -33,7 +33,7 @@
   complexity suggests a different time.
   - Having an imbalnced tree could effect the time. This would cause the time complexity to be worse then the $\ O(\log_2 n)$ 
     complexity we used for a balanced tree.
-  - The distrubution of the data within the tree could be different. Which would effect the performance of the binary search algorithm.
+  - The distrubution of the data within the tree could be different. By distribution of data within the binary tree I am talking about the different ways the data can be arranged within the tree. So if the element we want is in the middle of the data set or close to the root. But in the        next set The same element could be in a different location in the tree or further away form the best case.
   - The difference of these 2 cases could be explained by a possiblity of the searches being run on different machines.
  
 I recieved help from the TA.
