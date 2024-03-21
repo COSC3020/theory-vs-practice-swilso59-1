@@ -5,11 +5,10 @@
   actual performance in practice.
   - constant factors and hidden constants typically in asymtotic analysis constant factors are ignored.
     In real life situation these factors can have a decent impact on the actual time comlexity.
-  - The input data given in the real world can be much different then what it would be assumed to be for the asymtotic analysis.
-    an algorrithm that performs well for the average and worst case senario might might not have good performance for a
-    specific input that was not considered.
-  - Hardware may have different instruction sets algorithms that perform well on one machine may not perform the same on another type of 
-    machine. Asymtoic analysis does not take this into consideration and can lead to misleading expectations of performance.
+  - The type of analysis you are doing. If it is big O notation then this would give you loose bounds which mean that the runtime my be 
+    actually faster than the analysis is for the worst case scenario.
+  - Hardware may have different instruction sets algorithms that perform well on one machine may not perform the same on another type 
+    of machine. Asymtoic analysis does not take this into consideration and can lead to misleading expectations of performance.
 
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
@@ -24,16 +23,19 @@
   - So now we know a tree that has 1000 elements has a height of ten and a max number of comparisons of 11. We also know this takes 5 
     seconds so find a specific element.
   - $\\log_2 10000 = 13.287$ We can round to the nearest integer of 13 as the hieght and can get the max number of comparisons of 14.
-  - Now using what we know we can estimate the amount of time it would take to find the same element in a tree with 10,000 elements and a 
-    height of 13.
+  - Now using what we know we can estimate the amount of time it would take to find the same element in a tree with 10,000 elements and 
+    a height of 13.
   - time for height of $\ 13 = \frac{5 * 13}{10} = \frac{65}{10} = 6.5 seconds $.  
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
-  - Having an imbalnced tree could effect the time. This would cause the time complexity to be worse then the $\ O(\log_2 n)$ 
-    complexity we used for a balanced tree.
-  - The distrubution of the data within the tree could be different. By distribution of data within the binary tree I am talking about the different ways the data can be arranged within the tree. So if the element we want is in the middle of the data set or close to the root. But in the        next set The same element could be in a different location in the tree or further away form the best case.
+  - Having an imbalnced tree could effect the time. This would cause the time complexity to be worse then the expected $\ O(\log_2 n)$ 
+    complexity we used for a balanced tree. Having In an unbalanced tree the hieght could be higher then what would be expected in a 
+    balanced tree. This would lead to an incresed amount of comparisons which could result in the increased search time.  
+  - The distrubution of the data within the tree could be different. By distribution of data within the binary tree I am talking about  
+    the different ways the data can be arranged within the tree. So if the element we want is in the middle of the data set or close to 
+    the root. But in the next set The same element could be in a different location in the tree or further away form the best case.
   - The difference of these 2 cases could be explained by a possiblity of the searches being run on different machines.
  
 I recieved help from the TA.
