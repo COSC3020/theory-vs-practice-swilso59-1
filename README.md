@@ -20,7 +20,7 @@
     particular element in the tree.
   - $\\log_2 1000 = 9.965$ which we can just round to 10 given the tree is balanced. So know we know the height of the tree is 10
     and the max number of comparisons made is 10 or $\\log_2 (n)$
-  - So now we know a tree that has 1000 elements has a height of ten and a max number of comparisons of 11. We also know this takes 5 
+  - So now we know a tree that has 1000 elements has a height of ten and a max number of comparisons of 10. We also know this takes 5 
     seconds so find a specific element.
   - $\\log_2 10000 = 13.287$ We can round to the nearest integer of 13 as the hieght and can get the max number of comparisons of 13.
   - Now using what we know we can estimate the amount of time it would take to find the same element in a tree with 10,000 elements and 
@@ -30,9 +30,8 @@
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
-  - Having an imbalnced tree could effect the time. This would cause the time complexity to be worse then the expected $\ O(\log_2 n)$ 
-    complexity we used for a balanced tree. Having In an unbalanced tree the hieght could be higher then what would be expected in a 
-    balanced tree. This would lead to an incresed amount of comparisons which could result in the increased search time.  
+  - The efficiency of binary search can be significantly influenced by how effectively it utilizes the cache and memory. In scenarios where the cache is not utilized optimally, fetching elements from memory can 
+    lead to increased search time.
   - The distrubution of the data within the tree could be different. By distribution of data within the binary tree I am talking about  
     the different ways the data can be arranged within the tree. So if the element we want is in the middle of the data set or close to 
     the root. But in the next set The same element could be in a different location in the tree or further away form the best case.
